@@ -1,3 +1,5 @@
-while true do
-   game.ReplicatedStorage.MainEvent:FireServer("Stomp")
+if game.PlaceId == 6516141723 then  --- Lobby
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsKing/DoorsCode/refs/heads/main/lobby"))()
+elseif game.PlaceId == 6839171747 then --- In Game
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsKing/DoorsCode/main/main"))()
 end
